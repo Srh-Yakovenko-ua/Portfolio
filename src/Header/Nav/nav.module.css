@@ -1,0 +1,7 @@
+.nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: #7ca1d5;
+}
