@@ -1,11 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 .skill {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 250px ;
+    width: 250px;
+    padding: 15px;
     background-color: #dcc2c2;
 }
+
 .icon {
     height: 60px;
     width: 60px;

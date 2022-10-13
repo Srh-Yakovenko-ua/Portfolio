@@ -5,10 +5,14 @@ import style from './nav.module.css'
 const Nav = () => {
     return (
         <div className={style.nav}>
-            <a href="">Главная</a>
-            <a href="">Скиллы</a>
-            <a href="">Проекты</a>
-            <a href="">Контакты</a>
+            <ul className={style.lists}>
+                <li className={style.list}><a href="#">Главная</a></li>
+                <li className={style.list}><a href="#">Скиллы</a></li>
+                <li className={style.list}><a href="#">Проекты</a></li>
+                <li className={style.list}><a href="#">Контакты</a></li>
+            </ul>
+
+
         </div>
     );
 };

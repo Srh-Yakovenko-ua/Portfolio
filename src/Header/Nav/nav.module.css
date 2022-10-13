@@ -1,7 +1,16 @@
 .nav {
     width: 300px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     border: 1px solid black;
     background-color: #7ca1d5;
+
+}
+.list {
+    list-style-type : none;
+
+}
+.lists {
+    display: flex;
 }
