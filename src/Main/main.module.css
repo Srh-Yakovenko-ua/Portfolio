@@ -8,6 +8,7 @@
 .text {
     width: 300px;
     background-color: darkgray;
+    padding: 15px
 }
 
 .photo {

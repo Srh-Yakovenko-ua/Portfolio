@@ -1,8 +1,5 @@
 .nav {
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 500px;
     border: 1px solid black;
     background-color: #7ca1d5;
 
@@ -13,4 +10,12 @@
 }
 .lists {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
