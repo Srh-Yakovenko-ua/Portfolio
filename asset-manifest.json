@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Srh-Yakovenko-ua/Portfolio/static/css/main.7d4882e4.css",
+    "main.js": "/Srh-Yakovenko-ua/Portfolio/static/js/main.1340febc.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Srh-Yakovenko-ua/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "index.html": "/Srh-Yakovenko-ua/Portfolio/index.html",
+    "main.7d4882e4.css.map": "/Srh-Yakovenko-ua/Portfolio/static/css/main.7d4882e4.css.map",
+    "main.1340febc.js.map": "/Srh-Yakovenko-ua/Portfolio/static/js/main.1340febc.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Srh-Yakovenko-ua/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d4882e4.css",
+    "static/js/main.1340febc.js"
+  ]
+}
