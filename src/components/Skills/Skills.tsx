@@ -7,7 +7,7 @@ import {
   SiHtml5,
   SiJavascript,
   SiJest,
-  SiMaterialui,
+  SiMui,
   SiNodedotjs,
   SiRedux,
   SiStyledcomponents,
@@ -67,7 +67,7 @@ export const Skills = () => {
           <span className={style.skillName}>CSS</span>
         </div>
         <div className={`${style.skillsBlock} ${style.mui}`}>
-          <SiMaterialui className={style.icon} />
+          <SiMui className={style.icon} />
           <span className={style.skillName}>Material UI</span>
         </div>
 
