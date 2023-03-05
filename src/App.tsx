@@ -1,23 +1,18 @@
-import React from 'react';
-import './App.css';
-import {Header} from './Header/Header';
-import {Main} from './Main/Main';
-import {Skills} from './Skills/Skills';
-import {MyWorks} from './MyWorks/MyWorks';
-import {Form} from './ContactForm/Form';
-import {Footer} from './Footer/Footer';
+import React from 'react'
+import { Header } from './components/Header/Header'
+import { Outlet } from 'react-router-dom'
+import { SpeedDialSocial } from './components/SpeedDialSocial/SpeedDialSocial'
+import { Particle } from './components/Particle/Particle'
 
 function App() {
-    return (
-        <div className="App">
-            <Header/>
-            <Main/>
-            <Skills/>
-            <MyWorks/>
-            <Form/>
-            <Footer/>
-        </div>
-    );
+  return (
+    <>
+      <Header />
+      <Particle />
+      <SpeedDialSocial />
+      <Outlet />
+    </>
+  )
 }
 
-export default App;
+export default App

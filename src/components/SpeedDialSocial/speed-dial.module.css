@@ -1,0 +1,22 @@
+
+.telegram {
+    color: white;
+
+}
+
+.linked {
+    color: white;
+
+}
+
+.codewars {
+    color: black;
+}
+
+.github {
+    color: white;
+}
+
+.share {
+    color: var(--pallete-dark-blue);
+}

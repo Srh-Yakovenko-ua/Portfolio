@@ -1,0 +1,248 @@
+.skillsContainer {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    margin: 50px 0 30px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: var(--fw-700);
+    color: var(--pallete-red);
+    animation: bounce-in-top 1.5s both
+}
+
+
+.title::after {
+    bottom: -20px;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    width: 70px;
+    background: var(--pallete-red);
+}
+
+.skillsWrapper {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, max-content));
+    gap: 75px;
+    justify-content: center;
+    animation: bounce-in-top 1.5s both
+}
+
+.skillsBlock {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    height: 150px;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--pallete-dark-blue);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.skillsBlock:hover {
+    animation: heartbeat 1.5s ease-in-out both;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.skillName {
+    font-size: 1rem;
+    font-weight: var(--fw-600);
+}
+
+.skillName:last-child {
+    line-height: 20px;
+}
+
+.icon {
+    height: 44px;
+    width: 44px;
+}
+.icon:hover{
+    animation:rotate-center .6s ease-in-out both;
+}
+@keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+
+.react:hover  {
+    color: #61dafb;
+
+}
+
+.redux:hover {
+    color: #764abc;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.javascript:hover {
+    color: #fcdc00;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.typescript:hover {
+    color: #3178c6;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.axios:hover {
+    color: #671ddf;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.jest:hover {
+    color: #c21325;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.git:hover{
+    color: #f14e32;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.node:hover {
+    color: #026e00;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.html:hover {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: orangered;
+}
+
+.css:hover {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: #10AEDB;
+}
+
+.mui:hover {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: #007fff;
+}
+
+.styled:hover {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: mediumvioletred;
+}
+
+
+@media screen  and (max-width: 930px) {
+    .skillsWrapper {
+        grid-template-columns: repeat(3, minmax(min-content, max-content));
+        gap: 35px;
+    }
+}
+
+@media screen  and (max-width: 690px) {
+    .skillsWrapper {
+        grid-template-columns: repeat(2, minmax(min-content, max-content));
+    }
+}
+
+@media screen  and (max-width: 440px) {
+    .skillsWrapper {
+        grid-template-columns: repeat(2, minmax(min-content, max-content));
+    }
+
+    .skillsBlock {
+        min-width: 130px;
+        height: 130px;
+    }
+}
+
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0
+    }
+    100% {
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+@keyframes bounce-in-top {
+    0% {
+        transform: translateY(-500px);
+        animation-timing-function: ease-in;
+        opacity: 0
+    }
+    38% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+        opacity: 1
+    }
+    55% {
+        transform: translateY(-65px);
+        animation-timing-function: ease-in
+    }
+    72% {
+        transform: translateY(0);
+        animation-timing-function: ease-out
+    }
+    81% {
+        transform: translateY(-28px);
+        animation-timing-function: ease-in
+    }
+    90% {
+        transform: translateY(0);
+        animation-timing-function: ease-out
+    }
+    95% {
+        transform: translateY(-8px);
+        animation-timing-function: ease-in
+    }
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out
+    }
+    10% {
+        transform: scale(.91);
+        animation-timing-function: ease-in
+    }
+    17% {
+        transform: scale(.98);
+        animation-timing-function: ease-out
+    }
+    33% {
+        transform: scale(.87);
+        animation-timing-function: ease-in
+    }
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out
+    }
+}
