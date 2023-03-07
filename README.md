@@ -3,7 +3,6 @@
 ## Libraries are included in the project
 
 - React
-- JavaScript
 - Typescript
 - Formik
 - Yup

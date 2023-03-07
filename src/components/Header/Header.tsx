@@ -8,13 +8,13 @@ import { TfiClose } from 'react-icons/tfi'
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const handle = () => {
+  const handleOpen = () => {
     setIsOpen(!isOpen)
   }
 
   return (
     <div className={style.wrapper}>
-      <div className={style.mobileMenu} onClick={handle}>
+      <div className={style.mobileMenu} onClick={handleOpen}>
         {isOpen && <TfiClose className={style.menuIcon} />}
         {!isOpen && <AiOutlineMenu className={style.menuIcon} />}
       </div>

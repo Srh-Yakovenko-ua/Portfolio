@@ -14,22 +14,22 @@ export const NavBar: React.FC<{
   return (
     <ul className={contentStyle}>
       <li className={style.list} onClick={closeMenu}>
-        <NavLink className={isActive} to={'/'}>
+        <NavLink className={isActive} to="/">
           Home
         </NavLink>
       </li>
       <li className={style.list} onClick={closeMenu}>
-        <NavLink className={isActive} to={'/skills'}>
+        <NavLink className={isActive} to="/skills">
           Skills
         </NavLink>
       </li>
       <li className={style.list} onClick={closeMenu}>
-        <NavLink className={isActive} to={'/projects'}>
+        <NavLink className={isActive} to="/projects">
           Projects
         </NavLink>
       </li>
       <li className={style.list} onClick={closeMenu}>
-        <NavLink className={isActive} to={'/contact'}>
+        <NavLink className={isActive} to="/contact">
           Contact
         </NavLink>
       </li>

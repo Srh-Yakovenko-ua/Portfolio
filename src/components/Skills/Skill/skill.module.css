@@ -1,0 +1,64 @@
+.skillsBlock {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    height: 150px;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--pallete-dark-blue);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.skillsBlock:hover {
+    animation: heartbeat 1.5s ease-in-out both;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+
+.skillName {
+    font-size: 1rem;
+    font-weight: var(--fw-600);
+}
+
+.skillName:last-child {
+    line-height: 20px;
+}
+
+
+@media screen  and (max-width: 440px) {
+    .skillsBlock {
+        min-width: 130px;
+        height: 130px;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out
+    }
+    10% {
+        transform: scale(.91);
+        animation-timing-function: ease-in
+    }
+    17% {
+        transform: scale(.98);
+        animation-timing-function: ease-out
+    }
+    33% {
+        transform: scale(.87);
+        animation-timing-function: ease-in
+    }
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out
+    }
+}
