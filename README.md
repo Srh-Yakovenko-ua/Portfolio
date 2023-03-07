@@ -9,5 +9,4 @@
 - React-router-dom
 - Material UI
 - Email.js/browser
-- node-sass
 - React-icons
