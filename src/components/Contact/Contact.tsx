@@ -2,29 +2,52 @@ import React from 'react'
 import main from './../../common/styles/container.module.css'
 import style from './contact.module.css'
 import { useFormik } from 'formik'
-import * as Yup from 'yup'
+import { MainTitle } from '../../common/components/MainTitle/MainTitle'
+import emailjs from '@emailjs/browser'
+import { EMAIL_SERVICE } from '../../common/constants/email-service'
+import { validateSchema } from '../../common/constants/validate-schema'
+
+interface DataFormik {
+  name: string
+  email: string
+  message: string
+}
 
 export const Contact = () => {
-  const { handleSubmit, getFieldProps, touched, errors } = useFormik({
+  const { handleSubmit, getFieldProps, touched, errors, resetForm } = useFormik<DataFormik>({
     initialValues: {
       name: '',
       email: '',
       message: '',
     },
-    validationSchema: Yup.object({
-      name: Yup.string(),
-      email: Yup.string().required().email('Invalid email address'),
-      message: Yup.string(),
-    }),
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2))
+    validationSchema: validateSchema,
+    onSubmit: (data: DataFormik) => {
+      emailjs
+        .send(
+          EMAIL_SERVICE.YOUR_SERVICE_ID,
+          EMAIL_SERVICE.YOUR_TEMPLATE_ID,
+          {
+            name: data.name,
+            email: data.email,
+            message: data.message,
+          },
+          EMAIL_SERVICE.YOUR_PUBLIC_KEY
+        )
+        .then(
+          (res) => {
+            resetForm()
+            alert('Message sent successfully')
+          },
+          (err: any) => {
+            console.log(err)
+          }
+        )
     },
   })
+
   return (
     <div className={`${main.container} ${style.contactContainer}`}>
-      <div className={style.title}>
-        <h2>Contact</h2>
-      </div>
+      <MainTitle nameTitle="Contact" className={style.animateContactTitle} />
 
       <form className={style.form} onSubmit={handleSubmit}>
         <span className={style.text}>I am available for work</span>
