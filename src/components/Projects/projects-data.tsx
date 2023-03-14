@@ -2,6 +2,7 @@ import style from './projects.module.css'
 import cards from '../../assets/img/cards.png'
 import todo from '../../assets/img/todoImg.png'
 import country from '../../assets/img/country.jpg'
+import dashboard from '../../assets/img/jobListings.jpg'
 
 export const projectsData = [
   {
@@ -30,5 +31,14 @@ export const projectsData = [
     Typescript, Axios, React-router-dom, Styled-components, React-select`,
     demo: 'https://srh-yakovenko-ua.github.io/react-country-flags/',
     code: 'https://github.com/Srh-Yakovenko-ua/react-country-flags',
+  },
+  {
+    animateDuration: style.dashboard,
+    name: 'Job listings',
+    img: dashboard,
+    description: `React, Redux-toolkit, Javascript,
+     CSS, Redux-persister, props-types `,
+    demo: 'https://srh-yakovenko-ua.github.io/react-job-listings/',
+    code: 'https://github.com/Srh-Yakovenko-ua/react-job-listings',
   },
 ]

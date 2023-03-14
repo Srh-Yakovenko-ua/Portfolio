@@ -38,6 +38,11 @@
     animation-delay: 2s;
     animation-duration: 1500ms;
 }
+.dashboard {
+    animation: slide-in-elliptic-top-fwd .5s cubic-bezier(.25, .46, .45, .94) both;
+    animation-delay: 3s;
+    animation-duration: 1500ms;
+}
 
 @keyframes slide-in-elliptic-top-fwd {
     0% {
